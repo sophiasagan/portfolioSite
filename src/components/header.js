@@ -1,50 +1,81 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
+import get from "lodash/get"
 import React from "react"
+import styled from "styled-components"
 
-import gatsbyLogo from "../images/gatsby-icon.png"
+import profileImg from "../images/sjwhitecode.png"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          <img
-            style={{
-              width: "100px",
-            }}
-            src={gatsbyLogo}
-            alt="Gatsby Logo"
-          />
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const HeaderWrapper = styled.div`
+  background: rgba(59, 72, 79, 6)
+  ;
+  img {
+    margin-bottom: 0;
+    transition: all .2s ease-in-out;    
+  }
+  img:hover {
+    transform: scale(1.1); 
+  }
+`
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+const HeaderContainer = styled.div`
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0.3rem;
+`
 
-Header.defaultProps = {
-  siteTitle: ``,
+const Header = ({ metadata = {}, noBlog = false }) => {
+  const twitter = get(metadata, "author", true)
+  const github = get(metadata, "github", true)
+  const linkedin = get(metadata, "linkedin", true)
+
+  return (
+    <HeaderWrapper>
+      <HeaderContainer>
+        <div>
+          <div>
+            <Link to="/">
+              <img src={profileImg} alt={metadata.name} style={{
+              width: '200px',
+            }} />
+            </Link>
+          </div>
+          <div>
+            <h1>
+              <Link to="/">{metadata.name}</Link>
+            </h1>
+            <p>{metadata.description}</p>
+            <ul>
+              {twitter && (
+                <li>
+                  <a href={`https://twitter.com/${twitter}`}>Twitter</a>
+                </li>
+              )}
+              {github && (
+                <li>
+                  <a href={github}>GitHub</a>
+                </li>
+              )}
+              {linkedin && (
+                <li>
+                  <a href={linkedin}>LinkedIn</a>
+                </li>
+              )}
+              {!noBlog && (
+                <li>
+                  <Link to="/blog">Blog</Link>
+                </li>
+              )}
+              {!noBlog && (
+                <li>
+                  <Link to="/projects">Projects</Link>
+                </li>
+              )}
+            </ul>
+          </div>
+        </div>
+      </HeaderContainer>
+    </HeaderWrapper>
+  )
 }
 
 export default Header

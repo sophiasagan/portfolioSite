@@ -1,14 +1,81 @@
 module.exports = {
   siteMetadata: {
-    title: `Sophia's Portfolio and Blog`,
-    description: `Sophia Jung Full Stack engineer based in Metro Detroit Michigan`,
-    author: `Sophia Jung`,
-    social: {
-      twitter: `kingsophij`,
-    },
+    // Site URL for when it goes live
+    // siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
+    // Your Name
+    name: 'Sophia Jung',
+    // Main Site Title
+    title: `Sophia Jung | Full-Stack Developer`,
+    // Description that goes under your name in main bio
+    description: `Sophia Jung Full Stack engineer based in Metro Detroit Michigan.`,
+    // Optional: Twitter account handle
+    author: `@KingSofieJ`,
+    // Optional: Github account URL
+    github: `https://github.com/sophiasagan`,
+    // Optional: LinkedIn account URL
+    linkedin: `https://www.linkedin.com/in/sophiabraddockjung/`,
+    // Content of the About Me section
+    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    // Optional: List your projects, they must have `name` and `description`. `link` is optional.
+    projects: [
+      {
+        name: 'Sample Project',
+        description:
+          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
+        link: 'https://github.com/SophiaSagan',
+      },
+      {
+        name: 'Sample Project',
+        description:
+          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
+        link: 'https://chromeextensionkit.com/?ref=devfolio',
+      },
+      {
+        name: 'Another Cool Project',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
+        link: 'https://github.com/SophiaSagan',
+      },
+    ],
+    // Optional: List your experience, they must have `name` and `description`. `link` is optional.
+    experience: [
+      {
+        name: 'Acme Corp',
+        description: 'Full-Stack Developer, February 2020 - Present',
+        link: 'https://github.com/SophiaSagan',
+      },
+      {
+        name: 'Globex Corp',
+        description: 'Full-Stack Developer, December 2017 - February 2020',
+        link: 'https://github.com/SophiaSagan',
+      },
+      {
+        name: 'Hooli',
+        description: 'Full-Stack Developer, May 2015 - December 2017',
+        link: 'https://github.com/SophiaSagan',
+      },
+    ],
+    // Optional: List your skills, they must have `name` and `description`.
+    skills: [
+      {
+        name: 'Languages & Frameworks',
+        description:
+          'JavaScript (ES6+), Python, Node.js, Express.js, React',
+      },
+      {
+        name: 'Databases',
+        description: 'PostreSQL, MySQL',
+      },
+      {
+        name: 'Other',
+        description:
+          'Docker, Amazon Web Services (AWS), Firebase, CI / CD, Microservices, API design',
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -52,6 +119,7 @@ module.exports = {
         plugins: [],
       },
     },
+    
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
