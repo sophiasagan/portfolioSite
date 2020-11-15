@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import styled from 'styled-components'
 
+
 const ArchiveList = styled.ul`
 padding: 0;
 margin: 0;
@@ -35,6 +36,7 @@ const POST_ARCHIVE_QUERY = graphql`
 `
 
 const Archive = () => (
+  
   <StaticQuery
     query={POST_ARCHIVE_QUERY}
     render={({allMarkdownRemark}) => (

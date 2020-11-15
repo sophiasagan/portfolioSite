@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 const About = ({location}) => (
   <Layout location={location}>
     <div>
-      <h1>About Us</h1>
+      <h1>About Me</h1>
       <p>
         Lorem ipsum dolor amet disrupt shabby chic sriracha forage yr green
         juice kinfolk ennui taxidermy godard mlkshk affogato art party 8-bit

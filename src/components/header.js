@@ -6,7 +6,8 @@ import styled from "styled-components"
 import profileImg from "../images/sjwhitecodefull.png"
 
 const HeaderWrapper = styled.div`
-  background: rgba(59, 72, 79, 6);
+  background-color: rgba(59, 72, 79, 11);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.4);
   position: sticky;
   width: 100%;
   top: 0;
@@ -22,6 +23,7 @@ const HeaderWrapper = styled.div`
 `
 
 const HeaderContainer = styled.div`
+width: 90%;
   margin: 0 auto;
   display: block
   padding: 0.3rem;
@@ -47,16 +49,23 @@ const HeaderList = styled.ul`
     text-align: center;
     padding: 0px 16px;
     text-decoration: none;
+    background: none;
+    
+
   }
   li a:hover {
-    color: #111;
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-transition: background 1s ease-out;
+    
   }
 `
 
 const Header = ({ metadata = {}, noBlog = false }) => {
-  const twitter = get(metadata, "author", true)
-  const github = get(metadata, "github", true)
-  const linkedin = get(metadata, "linkedin", true)
+  // const twitter = get(metadata, "author", true)
+  const github = get(metadata, "github", false)
+  const linkedin = get(metadata, "linkedin", false)
 
   return (
     <HeaderWrapper>
@@ -73,9 +82,14 @@ const Header = ({ metadata = {}, noBlog = false }) => {
 
         <HeaderList>
           <ul>
-            {twitter && (
+            {/* {twitter && (
               <li>
                 <a href={`https://twitter.com/${twitter}`}>Twitter</a>
+              </li>
+            )} */}
+            {(
+              <li>
+                <Link to="/about">About</Link>
               </li>
             )}
             {github && (
@@ -90,7 +104,7 @@ const Header = ({ metadata = {}, noBlog = false }) => {
             )}
             {!noBlog && (
               <li>
-                <Link to="/posts">Blog</Link>
+                <Link to="/blog">Blog</Link>
               </li>
             )}
             {!noBlog && (
