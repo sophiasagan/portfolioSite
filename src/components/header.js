@@ -110,7 +110,7 @@ const Header = ({ metadata = {}, noBlog = false }) => {
             )}
             {!noBlog && (
               <li>
-                <Link to="/projects">Contact</Link>
+                <Link to="/contact">Contact</Link>
               </li>
             )}
           </ul>

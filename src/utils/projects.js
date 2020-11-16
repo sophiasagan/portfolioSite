@@ -1,6 +1,6 @@
 const projects = [
     {
-        name: "State Watcher - Back End",
+        name: "sample project",
         image: "",
         description:
             "Collaborated on a cross-functional team of developers as the sole back end engineer",
@@ -9,13 +9,13 @@ const projects = [
             "Integrated Jest testing throughout",
             "Deployed to Heroku with PostgresSQL",
         ],
-        github: "https://github.com/Co-make-bw/back-end",
-        link: "https://github.com/Co-make-bw/back-end",
+        github: "https://github.com/sophiasagan/",
+        link: "https://github.com/sophiasagan/",
         tools: ["Node", "JavaScript", "Jest", "PostgresSQL"],
     },
     {
-        name: "State Watcher - Front End",
-        image: "/images/projects/statewatcher3.png",
+        name: "sample project",
+        image: "/images/projects/sample.png",
         description:
             "Constructed and designed an application that brings attention to local issues affecting states in the United States",
         bullets: [
@@ -23,13 +23,13 @@ const projects = [
             "Converted state management to use Redux",
             "Updated styling to use SCSS",
         ],
-        github: "https://github.com/CAM603/state-watcher",
-        link: "https://state-watcher.vercel.app/",
+        github: "https://github.com/sophiasagan/",
+        link: "https://samplelink.com/",
         tools: ["React Native", "JavaScript", "HTML", "CSS", "SQLite"],
     },
     {
-        name: "React Native To Do",
-        image: "/images/projects/todo.png",
+        name: "sample project",
+        image: "/images/projects/sample.png",
         description:
             "Implemented a robust to do app with React Native to work offline and save data",
         bullets: [
@@ -37,21 +37,21 @@ const projects = [
             "Released Dark Mode feature",
             "Secured data persistence using SQLite database",
         ],
-        github: "https://github.com/CAM603/goals-app",
-        link: "https://github.com/CAM603/goals-app",
+        github: "https://github.com/sophiasagan/",
+        link: "https://samplelink.com",
         tools: ["React Native", "JavaScript", "HTML", "CSS", "SQLite"],
     },
     {
         name: "Game of Life",
-        image: "/images/projects/life.png",
+        image: "/images/projects/sample.png",
         description: "Re-engineered John Conway's Game of Life",
         bullets: [
             "Constructed game using React",
             "Systematized algorithm following the rules of life",
             "Integrated responsive styling for mobile and desktop",
         ],
-        github: "https://github.com/CAM603/game-of-life",
-        link: "https://game-of-life-black.vercel.app/",
+        github: "https://github.com/sophiasagan/",
+        link: "https://samplelink.com/",
         tools: ["JavaScript", "SCSS", "React"],
     },
     
