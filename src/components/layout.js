@@ -6,22 +6,21 @@
  */
 
 import React from "react"
+import get from 'lodash/get';
 import PropTypes from "prop-types"
 import styled from "styled-components"
-// import Img from "gatsby-image"
-// import { Spring } from 'react-spring/renderprops'
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-// import Archive from "./archive"
 import "./layout.css"
 
 const MainLayout = styled.main`
   max-width: 90%;
   margin: 1rem auto;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 40px;
+  display: block;
+  // display: grid;
+  // grid-template-columns: 3fr 1fr;
+  // grid-gap: 40px;
 `
 
 const Layout = ({ children, location }) => {

@@ -82,11 +82,7 @@ const Header = ({ metadata = {}, noBlog = false }) => {
 
         <HeaderList>
           <ul>
-            {/* {twitter && (
-              <li>
-                <a href={`https://twitter.com/${twitter}`}>Twitter</a>
-              </li>
-            )} */}
+            
             {(
               <li>
                 <Link to="/about">About</Link>
@@ -110,6 +106,11 @@ const Header = ({ metadata = {}, noBlog = false }) => {
             {!noBlog && (
               <li>
                 <Link to="/projects">Projects</Link>
+              </li>
+            )}
+            {!noBlog && (
+              <li>
+                <Link to="/projects">Contact</Link>
               </li>
             )}
           </ul>
