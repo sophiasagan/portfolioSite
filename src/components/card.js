@@ -61,9 +61,9 @@ const CardStyled = styled.div`
     }
     .links {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        width: 50%;
+        width: 100%;
     }
     .link {
         width: 35px;
