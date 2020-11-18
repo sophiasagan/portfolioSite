@@ -53,6 +53,7 @@ const LISTING_QUERY = graphql`
 const Listing = () => (
   <Layout>
     <SEO title="Recent work" />
+    <h1 className="txt-center">Blog</h1>
     <StaticQuery
       query={LISTING_QUERY}
       render={({ allMarkdownRemark }) =>

@@ -54,7 +54,7 @@ const AboutStyled = styled.section`
 const About = ({ location }) => (
   <Layout location={location}>
     <AboutStyled>
-      <h1>About</h1>
+    <h1 className="txt-center">About</h1>
 
       <Box as="h2" variant="title" fontSize={{ _: "1.6rem", md: "2.2rem" }}>
         Overview

@@ -13,6 +13,7 @@ const Footer = () => {
         {` `}
         <a href="https://github.com/sophiasagan">Sophia J.</a> using React &
         Gatsby.
+        
       </footer>
     </div>
   )

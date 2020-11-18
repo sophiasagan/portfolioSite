@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import Layout from "../components/layout"
-import SEO from "../components/seo"
 
 const AWS_GATEWAY_URL =
   'https://uqsmgja8q8.execute-api.us-east-1.amazonaws.com/prod';

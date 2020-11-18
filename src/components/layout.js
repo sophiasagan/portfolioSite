@@ -18,10 +18,7 @@ const MainLayout = styled.main`
   max-width: 90%;
   margin: 1rem auto;
   display: block;
-  // background-color: #dcdcdc;
-  // display: grid;
-  // grid-template-columns: 3fr 1fr;
-  // grid-gap: 40px;
+  
 `
 
 
@@ -46,7 +43,9 @@ const Layout = ({ children, location }) => {
 
   return (
     <>
+    
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      
       {/* <Spring
           from={{ height: location.pathname === '/' ? 200 : 300 }}
           to={{ height: location.pathname === '/' ? 300 : 200 }}

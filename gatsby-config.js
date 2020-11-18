@@ -83,6 +83,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-source-fontawesome`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -132,10 +133,9 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Raleway`,
-          `Playball`,
-          `Quicksand`,
-          `Montserrat`,       
+          `raleway`,
+          `lato:300, 400, 700`,
+          `montserrat`,       
         ],
         display: "swap",
       },
