@@ -8,8 +8,9 @@ import Archive from "../components/archive"
 const Post = styled.article`
   box-shadow: 0px 3px 10px rgba(25, 17, 34, 0.05);
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 14px;
   margin-bottom: 1rem;
+  background-color: #dcdcdc;
   a {
     color: #000;
     text-decoration: none;

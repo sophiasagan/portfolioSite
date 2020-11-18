@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Box } from "reflexbox"
 import Layout from "../components/layout"
+import Footer from '../components/footer'
 
 const AboutStyled = styled.section`
   display: flex;
@@ -9,12 +10,12 @@ const AboutStyled = styled.section`
   flex-direction: column;
 
   h1 {
-    font-size: 3rem;
+    // font-size: 3rem;
     padding: 20px 0;
     font-weight: bold;
   }
   p {
-    font-size: 1.2rem;
+    // font-size: 1.2rem;
     padding: 20px 0;
     line-height: 1.5;
   }
@@ -54,7 +55,7 @@ const About = ({ location }) => (
   <Layout location={location}>
     <AboutStyled>
       <h1>About</h1>
-      
+
       <Box as="h2" variant="title" fontSize={{ _: "1.6rem", md: "2.2rem" }}>
         Overview
       </Box>
@@ -67,34 +68,47 @@ const About = ({ location }) => (
         problem-solving, and that aligned with my growth mindset.
       </p>
       <p>
-        When I discovered coding and decided to teach myself basic JavaScript,
-        HTML, and CSS, I knew I had found exactly what I was looking for. I
-        heard about Lambda School, an intensive 7+ month accelerated program
-        with an immersive (full-time, 40+ hours/week) hands-on curriculum with a
-        focus on computer science, software engineering, and web development. I
-        applied, took their precourse screening material, and was accepted.
-        After the first couple of months, I knew without a doubt that I found my
-        niche in the world. Coding allows me to be creative, artistic, think
-        critically, problem-solve, and most importantly provides me with a
-        continuous pipeline of education and learning. Now I am solving
-        difficult code challenges, building full-stack websites, and learning
-        every day. I am looking forward to joining a company with diverse
-        forward thinkers who share my passions and work ethic.{" "}
-        <a href="mailto:sofi.c.jung@gmail.com">Contact me</a>.
+        IPhone direct trade cold-pressed, banjo you probably haven't heard of
+        them sustainable etsy single-origin coffee vexillologist synth marfa.
+        Glossier lumbersexual venmo cray, synth slow-carb raw denim. Portland
+        try-hard blue bottle YOLO pug butcher freegan echo park. Before they
+        sold out pork belly single-origin coffee green juice. Microdosing
+        taiyaki tbh schlitz banjo. Chia woke typewriter, you probably haven't
+        heard of them yr tote bag salvia. Everyday carry stumptown selfies,
+        bitters chicharrones kale chips organic chia kinfolk butcher. Try-hard
+        vape etsy health goth. Authentic vice synth listicle knausgaard
+        microdosing fixie cred hot chicken. Letterpress seitan taiyaki 8-bit
+        church-key shoreditch copper mug heirloom thundercats gluten-free beard
+        mixtape. Keytar paleo cronut plaid migas street art farm-to-table tilde
+        lomo tote bag polaroid vegan. Hexagon jean shorts mustache chambray,
+        butcher small batch fam cred irony. Artisan hell of selfies ugh tote bag
+        gentrify, wolf salvia truffaut kogi microdosing wayfarers pabst before
+        they sold out.
       </p>
       <Box as="h2" variant="title" fontSize={{ _: "1.6rem", md: "2.2rem" }}>
         Who am I?
       </Box>
       <p>
-        I am a thoughtful, self-driven, and dedicated team player who gives my
-        all to everything I do. I enjoy working with a team and also thrive when
-        given individual assignments to complete on my own. I am passionate
-        about developing and designing beautiful and fully responsive web
-        applications. None of my projects are considered done, I am constantly
-        thinking of improvements while iterating over previous releases as I
-        learn and become a better developer. Progression drives me and gives me
-        confidence. I have strong communication skills, am detail-oriented, and
-        have a positive attitude making me easy to work with. When not at my
+        IPhone direct trade cold-pressed, banjo you probably haven't heard of
+        them sustainable etsy single-origin coffee vexillologist synth marfa.
+        Glossier lumbersexual venmo cray, synth slow-carb raw denim. Portland
+        try-hard blue bottle YOLO pug butcher freegan echo park. Before they
+        sold out pork belly single-origin coffee green juice. Microdosing
+        taiyaki tbh schlitz banjo. Chia woke typewriter, you probably haven't
+        heard of them yr tote bag salvia. Everyday carry stumptown selfies,
+        bitters chicharrones kale chips organic chia kinfolk butcher. Try-hard
+        vape etsy health goth. Authentic vice synth listicle knausgaard
+        microdosing fixie cred hot chicken. Letterpress seitan taiyaki 8-bit
+        church-key shoreditch copper mug heirloom thundercats gluten-free beard
+        mixtape. Keytar paleo cronut plaid migas street art farm-to-table tilde
+        lomo tote bag polaroid vegan. Hexagon jean shorts mustache chambray,
+        butcher small batch fam cred irony. Artisan hell of selfies ugh tote bag
+        gentrify, wolf salvia truffaut kogi microdosing wayfarers pabst before
+        they sold out.
+        </p>
+        <p>
+        I have strong communication skills, am detail-oriented,
+        and have a positive attitude making me easy to work with. When not at my
         computer, you can either find me reading an interesting book or watching
         a horror movie.
       </p>
@@ -190,6 +204,7 @@ const About = ({ location }) => (
         </ul>
       </div>
     </AboutStyled>
+    <Footer />
   </Layout>
 )
 

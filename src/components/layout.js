@@ -18,10 +18,12 @@ const MainLayout = styled.main`
   max-width: 90%;
   margin: 1rem auto;
   display: block;
+  // background-color: #dcdcdc;
   // display: grid;
   // grid-template-columns: 3fr 1fr;
   // grid-gap: 40px;
 `
+
 
 const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
@@ -60,21 +62,23 @@ const Layout = ({ children, location }) => {
           margin: `0 auto`,
           maxWidth: 1200,
           padding: `0 1.0875rem 1.45rem`,
+                
         }}
       >
         <MainLayout>
           <div>{children}</div>
         </MainLayout>
         {/* <Archive /> */}
-        <footer
+        {/* <footer
           style={{
             marginTop: `2rem`,
+            textAlign: 'center'
           }}
         >
           © {new Date().getFullYear()}, Built by
           {` `}
-          <a href="https://github.com/sophiasagan">Sophia J.</a>
-        </footer>
+          <a href="https://github.com/sophiasagan">Sophia J.</a> using React & Gatsby.
+        </footer> */}
       </div>
     </>
   )

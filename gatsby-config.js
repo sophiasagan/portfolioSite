@@ -3,7 +3,7 @@ module.exports = {
     // Site URL for when it goes live
     // siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
     // Your Name
-    name: 'Sophia Jung',
+    name: "Sophia Jung",
     // Main Site Title
     title: `Sophia Jung | Full-Stack Developer`,
     // Description that goes under your name in main bio
@@ -19,66 +19,65 @@ module.exports = {
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        title: 'Sample Project',
+        title: "Sample Project",
         description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-        tech: 'React, Gatsby, SCSS, JS',
+          "A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS",
+        tech: "React, Gatsby, SCSS, JS",
         date: 2020,
-        github: 'https://github.com/SophiaSagan',
-        link: 'https://samplelink.com',
+        github: "https://github.com/SophiaSagan",
+        link: "https://samplelink.com",
       },
       {
-        title: 'Sample Project',
+        title: "Sample Project",
         description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-          tech: 'React, Gatsby, SCSS, JS',
-          date: 2020,
-          github: 'https://github.com/SophiaSagan',
-          link: 'https://samplelink.com',
+          "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates",
+        tech: "React, Gatsby, SCSS, JS",
+        date: 2020,
+        github: "https://github.com/SophiaSagan",
+        link: "https://samplelink.com",
       },
       {
-        title: 'Another Cool Project',
+        title: "Another Cool Project",
         description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-          tech: 'React, Gatsby, SCSS, JS',
-          date: 2020,
-          github: 'https://github.com/SophiaSagan',
-          link: 'https://samplelink.com',
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis",
+        tech: "React, Gatsby, SCSS, JS",
+        date: 2020,
+        github: "https://github.com/SophiaSagan",
+        link: "https://samplelink.com",
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
-        link: 'https://github.com/SophiaSagan',
+        name: "Acme Corp",
+        description: "Full-Stack Developer, February 2020 - Present",
+        link: "https://github.com/SophiaSagan",
       },
       {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/SophiaSagan',
+        name: "Globex Corp",
+        description: "Full-Stack Developer, December 2017 - February 2020",
+        link: "https://github.com/SophiaSagan",
       },
       {
-        name: 'Hooli',
-        description: 'Full-Stack Developer, May 2015 - December 2017',
-        link: 'https://github.com/SophiaSagan',
+        name: "Hooli",
+        description: "Full-Stack Developer, May 2015 - December 2017",
+        link: "https://github.com/SophiaSagan",
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
       {
-        name: 'Languages & Frameworks',
-        description:
-          'JavaScript (ES6+), Python, Node.js, Express.js, React',
+        name: "Languages & Frameworks",
+        description: "JavaScript (ES6+), Python, Node.js, Express.js, React",
       },
       {
-        name: 'Databases',
-        description: 'PostreSQL, MySQL',
+        name: "Databases",
+        description: "PostreSQL, MySQL",
       },
       {
-        name: 'Other',
+        name: "Other",
         description:
-          'Docker, Amazon Web Services (AWS), Firebase, CI / CD, Microservices, API design',
+          "Docker, Amazon Web Services (AWS), Firebase, CI / CD, Microservices, API design",
       },
     ],
   },
@@ -128,7 +127,20 @@ module.exports = {
         plugins: [],
       },
     },
-    
+
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Raleway`,
+          `Playball`,
+          `Quicksand`,
+          `Montserrat`,       
+        ],
+        display: "swap",
+      },
+    },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
