@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import get from "lodash/get"
 import React from "react"
 import styled from "styled-components"
 
@@ -118,9 +117,7 @@ const HeaderList = styled.ul`
 `
 
 const Header = ({ metadata = {}, noBlog = false }) => {
-  // const twitter = get(metadata, "author", true)
-  const github = get(metadata, "github", false)
-  const linkedin = get(metadata, "linkedin", false)
+  
 
   return (
     <HeaderWrapper>
