@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // Site URL for when it goes live
-    // siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
+    siteUrl: `https://5fb5d41f067dea0009c000e0--inspiring-kalam-56c524.netlify.app/`,
     // Your Name
     name: "Sophia Jung",
     // Main Site Title
@@ -28,13 +28,13 @@ module.exports = {
         link: "https://samplelink.com",
       },
       {
-        title: "Sample Project",
+        title: "Amazon Clone",
         description:
-          "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates",
-        tech: "React, Gatsby, SCSS, JS",
+          "Full functioning e-commerce website using Firebase Auth and Stripe Payment Gateway",
+        tech: "React, JS, Firebase, Stripe",
         date: 2020,
-        github: "https://github.com/SophiaSagan",
-        link: "https://samplelink.com",
+        github: "https://github.com/sophiasagan/AmazonClone",
+        link: "https://clone-d613f.web.app/",
       },
       {
         title: "Another Cool Project",

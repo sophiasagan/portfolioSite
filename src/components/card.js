@@ -1,7 +1,7 @@
 import React from 'react'
-import styled from "@emotion/styled";
+// import styled from "@emotion/styled";
 import { Box, Flex } from "reflexbox";
-// import styled from 'styled-components';
+import styled from 'styled-components';
 import external from '../images/icons8-external-link.svg'
 import github from '../images/icons8-github.svg'
 

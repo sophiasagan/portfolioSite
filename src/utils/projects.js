@@ -1,7 +1,9 @@
+import AmazonClonePic from '../images/projects/screencapture-clone-d613f-web-app-2020-11-18-21_28_28.png'
+
 const projects = [
     {
         name: "sample project",
-        image: "",
+        image: '',
         description:
             "Collaborated on a cross-functional team of developers as the sole back end engineer",
         bullets: [
@@ -14,18 +16,18 @@ const projects = [
         tools: ["Node", "JavaScript", "Jest", "PostgresSQL"],
     },
     {
-        name: "sample project",
-        image: "/images/projects/sample.png",
+        name: "Amazon Clone",
+        image: AmazonClonePic,
         description:
-            "Constructed and designed an application that brings attention to local issues affecting states in the United States",
+        "Full functioning e-commerce website using Firebase Auth and Stripe Payment Gateway",
         bullets: [
-            "Revamped front end architect and design",
-            "Converted state management to use Redux",
-            "Updated styling to use SCSS",
+            "Created authentication - user able to create login and sign in",
+            "Constructed database that saves and displays previous transactions",
+            "Integrated responsive styling",
         ],
-        github: "https://github.com/sophiasagan/",
-        link: "https://samplelink.com/",
-        tools: ["React Native", "JavaScript", "HTML", "CSS", "SQLite"],
+        github: "https://github.com/sophiasagan/AmazonClone",
+        link: "https://clone-d613f.web.app/",
+        tools: ["React", "JavaScript", "Firebase", "Stripe", "SQLite"],
     },
     {
         name: "sample project",
