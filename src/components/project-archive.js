@@ -4,10 +4,10 @@ import React from "react"
 import external from "../images/icons8-external-link.svg"
 import github from "../images/icons8-github.svg"
 // Styles
-import styled from "@emotion/styled";
+import styled from "styled-components";
 import { Box } from "reflexbox"
 // Components
-import Card from "./Card"
+import Card from "../components/card"
 // Utils
 import projects from "../utils/projects"
 // import styled from "styled-components"
