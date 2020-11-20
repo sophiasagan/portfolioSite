@@ -1,4 +1,4 @@
-import AmazonClonePic from '../images/projects/amazonclonescreenshot.jpg'
+import AmazonClonePic from '../images/projects/amazonclonepic.png'
 import RealEstatePage from '../images/projects/realestate.png'
 import Conway from '../images/projects/conwaynew.png'
 
