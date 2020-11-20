@@ -20,11 +20,11 @@ export default class postLayout extends Component {
             __html: markdownRemark.html,
           }}
         />
-        <div className="container">
+        {/* <div className="container">
         <div id="comments">
           <h2>Comments</h2>
         </div>
-        </div>
+        </div> */}
       </Layout>
     )
   }

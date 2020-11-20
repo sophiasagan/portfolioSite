@@ -10,7 +10,7 @@ const Post = styled.article`
   padding: 1rem;
   border-radius: 14px;
   margin-bottom: 1rem;
-  background-color: #dcdcdc;
+  background-color: #928a97;
   a {
     color: #000;
     text-decoration: none;

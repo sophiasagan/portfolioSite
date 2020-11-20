@@ -5,15 +5,15 @@ import styled from "styled-components"
 import profileImg from "../images/sjwhitecodefull.png"
 
 const HeaderWrapper = styled.div`
-  background: linear-gradient(45deg,  #69b7eb, #b3dbd3, #f4d6db);
-  border-bottom: 3px solid rgba(0, 0, 0, 0.4);
+  // background: linear-gradient(45deg,  #69b7eb, #b3dbd3, #f4d6db);
+  // border-bottom: 3px solid rgba(0, 0, 0, 0.4);
   position: sticky;
   width: 100%;
   top: 0;
   left: 0;
 
   img {
-    margin-top: 0;
+    margin-top: 1rem;
     margin-bottom: 0;
     transition: all 0.2s ease-in-out;
   }
@@ -38,24 +38,24 @@ const HeaderList = styled.ul`
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-size: 0.8rem;
     text-decoration: none;
-    color: #000;
+    color: #fbe8d3;
   }
   li {
     float: left;
     list-style-type: none;
   }
   li a {
-    color: #dcdcdc;
+    color: #fbe8d3;
     text-align: center;
     padding: 0px 16px;
     text-decoration: none;
     background: none;
   }
   li a:hover {
-    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    background: #f85f73;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    -webkit-transition: background 1s ease-out;
+    -webkit-transition: background .5s ease-out;
   }
   #hamnav {
     width: 100%;

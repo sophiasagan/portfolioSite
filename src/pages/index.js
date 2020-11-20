@@ -10,7 +10,7 @@ const Landing = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 325px;
+  margin: 300px;
   .name {
     position: relative;
     animation: fadeUp 2s ease-in-out;
@@ -18,10 +18,10 @@ const Landing = styled.div`
 
   span {
     
-    color: black;
+    color: #000;
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    font-size: 50px;
+    font-size: 55px;
     animation: fadeUp 2s ease-in-out;
     perspective: 0px;
     letter-spacing: 10px
@@ -32,14 +32,14 @@ const Landing = styled.div`
 
   #sub {
     font-size: 35px;
-    color: #3895D3;
+    color: #fce2c6;
   }
 
   .underline {
     height: 5px;
     width: 100%;
     display: block;
-    background-color: #c32c71; //#d9534f;
+    background-color: #f85f73; //#d9534f;
     margin: 11px 0;
   }
 
@@ -64,7 +64,7 @@ const Landing = styled.div`
       margin: 3em;
       width:150px;
       height:50px;
-      background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
+      background: #f85f73;
       border-style: none;
       color:#fff;
       font-size: 16px;
