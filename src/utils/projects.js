@@ -1,4 +1,6 @@
-import AmazonClonePic from '../images/projects/screencapture-clone-d613f-web-app-2020-11-18-21_28_28.png'
+import AmazonClonePic from '../images/projects/amazonclonescreenshot.jpg'
+import RealEstatePage from '../images/projects/real-estate-page.jpg'
+import Conway from '../images/projects/conway-page.jpg'
 
 const projects = [
     {
@@ -19,41 +21,41 @@ const projects = [
         name: "Amazon Clone",
         image: AmazonClonePic,
         description:
-        "Full functioning e-commerce website using Firebase Auth and Stripe Payment Gateway",
+        "Full functioning e-commerce website using Firebase authentication and deployment",
         bullets: [
             "Created authentication - user able to create login and sign in",
             "Constructed database that saves and displays previous transactions",
-            "Integrated responsive styling",
+            "Integrated Stripe Payment Gateway",
         ],
         github: "https://github.com/sophiasagan/AmazonClone",
         link: "https://clone-d613f.web.app/",
         tools: ["React", "JavaScript", "Firebase", "Stripe", "SQLite"],
     },
     {
-        name: "sample project",
-        image: "/images/projects/sample.png",
+        name: "Real Estate Property Page",
+        image: RealEstatePage,
         description:
-            "Implemented a robust to do app with React Native to work offline and save data",
+            "Implemented sample real estate page to show home and neighborhood with Google Maps API",
         bullets: [
-            "Optimized for IOS and Android devices",
-            "Released Dark Mode feature",
-            "Secured data persistence using SQLite database",
+            // "Optimized for IOS and Android devices",
+            // "Released Dark Mode feature",
+            "Integrated responsive styling for mobile and desktop",,
         ],
-        github: "https://github.com/sophiasagan/",
-        link: "https://samplelink.com",
-        tools: ["React Native", "JavaScript", "HTML", "CSS", "SQLite"],
+        github: "https://github.com/sophiasagan/real-estate",
+        link: "https://optimistic-nobel-3f151c.netlify.app/",
+        tools: ["HTML", "CSS3", "JS", "Google Maps API"],
     },
     {
         name: "Game of Life",
-        image: "/images/projects/sample.png",
+        image: Conway,
         description: "Re-engineered John Conway's Game of Life",
         bullets: [
             "Constructed game using React",
-            "Systematized algorithm following the rules of life",
+            "Created algorithm following the rules of life",
             "Integrated responsive styling for mobile and desktop",
         ],
-        github: "https://github.com/sophiasagan/",
-        link: "https://samplelink.com/",
+        github: "https://github.com/sophiasagan/game-of-life",
+        link: "https://elegant-mccarthy-4b9082.netlify.app/",
         tools: ["JavaScript", "SCSS", "React"],
     },
     

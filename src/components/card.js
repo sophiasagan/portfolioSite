@@ -9,7 +9,7 @@ const CardStyled = styled.div`
     display: flex;
     flex-direction: column;
     margin: 20px;
-    padding: 2px;
+    padding: 5px;
     border-radius: 14px;
     background-color: #928a97;
     box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
@@ -23,7 +23,7 @@ const CardStyled = styled.div`
         text-align: center;
     }
     .description {
-        text-align: left;
+        text-align: center;
     }
     .list {
         margin: 1em;
@@ -41,7 +41,7 @@ const CardStyled = styled.div`
         background-size: contain;
         background-repeat: no-repeat;
         width: 100%;
-        height: 300px;
+        height: 250px;
         @media (max-width: 400px) {
             height: 200px;
         }
