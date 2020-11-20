@@ -1,5 +1,5 @@
-import AmazonClonePic from '../images/projects/amazonclone.png'
-import RealEstatePage from '../images/projects/real-estate.png'
+import AmazonClonePic from '../images/projects/amazonclonescreenshot.jpg'
+import RealEstatePage from '../images/projects/realestate.png'
 import Conway from '../images/projects/conwaynew.png'
 
 const projects = [
