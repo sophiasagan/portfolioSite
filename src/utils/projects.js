@@ -1,6 +1,6 @@
 import AmazonClonePic from '../images/projects/amazonclone.png'
 import RealEstatePage from '../images/projects/real-estate.png'
-import Conway from '../images/projects/conway.png'
+import Conway from '../images/projects/conwaynew.png'
 
 const projects = [
     {
